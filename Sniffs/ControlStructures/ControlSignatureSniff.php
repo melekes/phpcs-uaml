@@ -37,15 +37,11 @@ class UAML_Sniffs_ControlStructures_ControlSignatureSniff extends PHP_CodeSniffe
    */
   protected function getPatterns() {
     return array(
-             'do {...}EOL while (...);EOL',
              'while (...) {',
              'for (...) {',
              'if (...) {',
              'foreach (...) {',
              'do {',
-             '}EOL else if (...) {',
-             '}EOL elseif (...) {',
-             '}EOL else {',
            );
   }
 }
